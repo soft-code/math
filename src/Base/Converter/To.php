@@ -13,7 +13,7 @@ class To implements ToInterface
         }
         
         $this->from = $this->from ?? new From;
-        $this->from->data = $data;
+        $this->from->data = array_reverse($data);
         return $this->from;
     }
 }

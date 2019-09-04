@@ -17,7 +17,7 @@ class Converter implements ConverterInterface
     
     public function convert(int ...$args) : BaseInterface
     {
-        $two = $args[1] ?? false;
+        $two = true; $args[1] ?? $two = false;
        
         $this->from->data = $args;
         $this->to->decimal = $args[0];
