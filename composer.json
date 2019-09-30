@@ -1,0 +1,8 @@
+{
+    "name":"com/math",
+    "autoload":{
+        "psr-4":{
+            "Com\\Math\\":"/src"
+        }
+    }
+}
